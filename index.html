@@ -9,48 +9,61 @@
 </head>
 
 <body>
-    <div class="login">
-        <table>
-            <thead>
-                <tr>
-                    <!-- <th></th> -->
-                    <th colspan="2">LOGIN</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <!-- <td></td> -->
-                    <td colspan="2">Username</td>
-                </tr>
-                <tr>
-                    <td> <img src="./assets/user-interface.png" class="logo-user"></td>
-                    <td colspan="2" class="input-cell">
-                        <input type="text" name="user-id" id="" placeholder="Type your username" required>
-                    </td>
-                </tr>
-                <tr>
-                    <!-- <td></td> -->
-                    <td colspan="2">Password</td>
-                </tr>
-                <tr>
-                    <td><img src="./assets/security.png" class="logo-pwd"></td>
-                    <td><input type="password" name="user-pwd" id="" placeholder="Type your password"></td>
-                </tr>
-                <tr>
-                    <!-- <td></td> -->
-                    <td colspan="2" class="forgot"><a href="#">Forgot password?</a></td>
-                </tr>
-                <tr>
-                    <!-- <td></td> -->
-                    <td colspan="2"><button type="button">LOGIN</button></td>
-                </tr>
-                <tr>
-                    <!-- <td></td> -->
-                    <td colspan="2" class="signup"><a href="#">SIGN UP</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <form action="#">
+        <div class="login">
+            <table>
+                <thead>
+                    <tr>
+                        <!-- <th></th> -->
+                        <th colspan="2">LOGIN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td colspan="2">
+                            <label for="user-id">
+                                Username
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <img src="./assets/user-interface.png" class="logo-user" alt=""></td>
+                        <td class="input-cell">
+                            <input type="email" name="user-id" id="user-id" placeholder="Type your username" 
+                            title="Informe seu usuario." required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td colspan="2">
+                            <label for="user-pwd">
+                                Password
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="./assets/security.png" class="logo-pwd" alt=""></td>
+                        <td><input type="password" name="user-pwd" id="user-pwd" placeholder="Type your password"
+                                title="Minimo de 8 caracteres" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                                required></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td colspan="2" class="forgot"><a href="#">Forgot password?</a></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td colspan="2"><button type="submit">LOGIN</button></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td colspan="2" class="signup"><a href="#">Sign up</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
 </body>
 
 </html>
